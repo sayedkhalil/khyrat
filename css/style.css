@@ -1,0 +1,241 @@
+/*
+/ Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+:root {
+  --color1: #98b441;
+}
+body * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+body {
+  background-color: rgb(238, 237, 234);
+}
+
+#oo:focus {
+  outline: none;
+}
+li {
+  list-style-type: none;
+}
+.hover:hover {
+  color: var(--color1);
+  transition: all 0.5s;
+}
+#nav li a {
+  color: rgb(43, 41, 41);
+}
+#nav li:hover a {
+  color: var(--color1);
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
+.na {
+  background-image: url("../imges/rev_slider6.png");
+  background-size: cover;
+  top: 40px;
+  display: none;
+  z-index: 9990;
+  background-color: seashell;
+  width: 150%;
+}
+
+.na li:hover {
+  color: var(--color1);
+  transition: all 0.5s;
+}
+.z-index {
+  z-index: 10;
+}
+.sl {
+  top: -10px;
+  right: -10px;
+  animation-name: right;
+  animation-duration: 5s;
+}
+.sl1 {
+  bottom: -10px;
+  left: 20%;
+  animation-name: top;
+  animation-duration: 5s;
+}
+.ttt {
+  top: 30%;
+  animation-name: button;
+  animation-duration: 5s;
+}
+.tt {
+  animation-name: sc;
+  animation-duration: 7s;
+}
+@keyframes right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: -10px;
+  }
+}
+@keyframes top {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: -10px;
+  }
+}
+@keyframes button {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 40%;
+  }
+}
+@keyframes sc {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.white {
+  background-color: white;
+}
+.dd .fa-search-plus {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+  color: grey;
+}
+.dd:hover {
+  box-shadow: 1px 5px 5px gray;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.dd:hover .ss {
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+}
+.dd:hover .fa-search-plus {
+  display: block;
+  transition: all 0.5s ease;
+}
+.st {
+  display: none;
+}
+.act {
+  display: flex;
+}
+.btn {
+  outline: none;
+}
+.co:nth-of-type(1) {
+  background-image: url(../imges/images.jpg);
+  height: 300px;
+  background-size: cover;
+  padding: 10px;
+}
+.co:nth-of-type(2) {
+  background-image: url(../imges/tttt.jpg);
+  height: 300px;
+  background-size: cover;
+  padding: 10px;
+  transition: all 0.5s;
+}
+.co:hover {
+  background-size: 115%;
+  transition: all 2s ease-in-out;
+}
+.sal .dd {
+  background-color: white;
+  border-radius: 50px;
+}
+.j {
+  background-image: url(../imges/bigstock--175706587_362019_large.jpg);
+  height: 200px;
+  background-size: cover;
+  color: #98b441;
+}
+.j:hover {
+  color: black;
+  background-size: 115%;
+  transition: all 1s ease-in-out;
+}
+.hg {
+  background-color: white;
+}
+img {
+  padding: 0px;
+}
+.ght {
+  text-align: center;
+}
+#iu {
+  z-index: 99;
+}
+.btn-success {
+  z-index: 99;
+}
+.y:hover {
+  color: rgb(31, 247, 78);
+
+  transition: all 1s ease-in-out;
+}
+.cont {
+  width: 90%;
+  margin: auto;
+}
+.kj {
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  padding: 30px;
+  background-color: rgba(87, 85, 85, 0.8);
+}
+.fi {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9999;
+  text-align: center;
+}
+li {
+  cursor: pointer;
+}
+.fa-bars {
+  right: 25px;
+  top: 10px;
+}
+.vvv {
+  top: 0px;
+  bottom: 0px;
+  left: -100%;
+  z-index: 9990;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.pl {
+  height: 40px;
+}
+.vb {
+  top: 50px;
+}
